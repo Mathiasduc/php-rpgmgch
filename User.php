@@ -1,31 +1,31 @@
 <?php 
 class User {
-	private $id = "";
-	private $email = "";
-	private $createdAt;
+	private $_id = "";
+	private $_email = "";
+	private $_createdAt;
 
 	function __construct($id, $email)
 	{
-		$this->id = $id;
-		$this->email = $email;
-		$this->createdAt = time();
+		$this->_id = $id;
+		$this->_email = $email;
+		$this->_createdAt = time();
 	}
-	public function getId(){
-		return $this->id;
+	public function get_id(){
+		return $this->_id;
 	}
-	public function setId($id) {
-        $this->id = $id;
+	public function set_id($_id) {
+        $this->_id = $_id;
     }
 
-	public function getEmail(){
-		return $this->email;
+	public function get_email(){
+		return $this->_email;
 	}
-	public function	setEmail($email){
-		$this->email = $email;
+	public function	set_email($_email){
+		$this->_email = $_email;
 	}
-	public function getCreatedAt()
+	public function get_createdAt()
 	{
-		return $this->createdAt;
+		return $this->_createdAt;
 	}
 
 }
